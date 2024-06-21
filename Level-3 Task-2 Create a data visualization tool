@@ -1,0 +1,18 @@
+# Task 2
+
+#  Create a Data Visualization Tool
+
+import plotly.express as px
+import pandas as pd
+
+# Sample dataset
+data = {
+    'City': ['New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix'],
+    'Population': [8398748, 3990456, 2705994, 2320268, 1680992]
+}
+
+df = pd.DataFrame(data)
+
+# Create an interactive bar chart using Plotly
+fig = px.bar(df, x='City', y='Population', title='Population of Major Cities')
+fig.show()
