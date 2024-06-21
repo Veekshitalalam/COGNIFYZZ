@@ -1,0 +1,10 @@
+# TASK-2
+# Temperature Conversion
+
+def celsius_to_fahrenheit(celsius):
+    fahrenheit = (celsius * 9/5) + 32
+    return fahrenheit
+
+celsius_temperature = float(input("Enter temperature in Celsius: "))
+converted_temperature = celsius_to_fahrenheit(celsius_temperature)
+print("Temperature in Fahrenheit:", converted_temperature)
