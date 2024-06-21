@@ -1,0 +1,12 @@
+# TASK-5
+# Palindrome Checker
+
+def is_palindrome(s):
+    s = ''.join(char.lower() for char in s if char.isalnum())
+    return s == s[::-1]
+
+word = input("Enter a word or phrase: ")
+if is_palindrome(word):
+    print("It's a palindrome!")
+else:
+    print("It's not a palindrome.")
