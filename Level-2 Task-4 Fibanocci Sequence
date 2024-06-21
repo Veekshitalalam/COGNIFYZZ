@@ -1,0 +1,27 @@
+# TASK-4
+#  Fibonacci Sequence
+
+def generate_fibonacci_sequence(n):
+    fibonacci_sequence = []
+    if n <= 0:
+        return fibonacci_sequence
+    elif n == 1:
+        fibonacci_sequence.append(0)
+    else:
+        fibonacci_sequence.extend([0, 1])
+        for i in range(2, n):
+            next_term = fibonacci_sequence[-1] + fibonacci_sequence[-2]
+            fibonacci_sequence.append(next_term)
+    return fibonacci_sequence
+
+def main():
+    try:
+        n = int(input("Enter the number of terms for the Fibonacci sequence: "))
+        fibonacci_sequence = generate_fibonacci_sequence(n)
+        print("Fibonacci sequence:")
+        print(fibonacci_sequence)
+    except ValueError:
+        print("Please enter a valid integer.")
+
+if _name_ == "_main_":
+    main()
