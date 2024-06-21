@@ -1,0 +1,18 @@
+# Task - 3: 
+
+# Automate a Task
+
+def process_sales_data(daily_sales):
+    total_sales = sum(daily_sales)
+    avg_sales = total_sales / len(daily_sales)
+    return total_sales, avg_sales
+
+# Sample daily sales data
+daily_sales = [200, 350, 400, 275, 320]
+
+# Process daily sales data
+total_sales, avg_sales = process_sales_data(daily_sales)
+
+print(f"Daily Sales Data: {daily_sales}")
+print(f"Total Sales: {total_sales}")
+print(f"Average Daily Sales: {avg_sales}")
